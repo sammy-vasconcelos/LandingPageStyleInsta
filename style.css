@@ -1,0 +1,158 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+body {
+    width: 100%;
+    min-width: 100vh;
+    background-color: rgb(253, 228, 242);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.instagram-wrapper {
+    display: flex;
+    align-items: center; /*eixo y*/
+    justify-content: right; /*eixo x*/
+    width: 60%;
+    height: 100vh;
+}
+
+.instagram-phone{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    width: 50%;
+    
+}
+.instagram-phone img {
+    height: 36rem;
+}
+
+.instagram-continue{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 50%;
+    min-width: 34rem;
+}
+
+.group{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+    flex-direction: column;
+    background-color: rgba(224, 151, 249, 0.16);
+    width: 100%;
+    padding: 1.3rem 0 ;
+    border: 1px solid rgba(252, 0, 214, 0.034);
+}
+
+.group:nth-child(1) {
+    min-height: 10rem;
+    
+}
+
+.logo{
+    height: 8rem;
+}
+
+.profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2rem;
+    overflow: hidden;
+}
+
+.profile img {
+    height: 8rem;
+    margin: 0;
+}
+
+.inst-login{
+    background-color: rgb(145, 101, 186);
+    color: rgb(227, 227, 227);
+    padding: 8px;
+    border-radius: 4px;
+}
+.isnt-logout{
+    color:rgb(145, 101, 186);
+    margin-top: 1rem;
+
+}
+
+.not-account{
+    color: rgb(89, 83, 85);
+}
+
+.link-blue{
+    color: rgb(218, 93, 227);
+}
+
+.get-the-app{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.3rem 0;
+}
+
+.download{
+    display: flex;
+    width: 100%;
+    justify-content:  center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.app-download{
+    
+    width: 9rem;
+    background-size: cover;
+}
+
+.app-download:nth-child(1){
+    background-image: url('http://pixelartmaker-data-78746291193.nyc3.digitaloceanspaces.com/image/431e521a99252e6.png');
+    height: 4rem;
+}
+
+.app-download:nth-child(2){
+    background-image: url('http://pixelartmaker-data-78746291193.nyc3.digitaloceanspaces.com/image/d64680c54f6ea24.png');
+    height: 7rem;
+    
+}
+ /*responsividade*/
+
+ @media (max-width: 1024px){
+    .instagram-wrapper{
+        width: 90%;
+    }
+ }
+
+ @media (max-width: 650px){
+    body{
+        background-color: rgb(253, 228, 242);
+    }
+    .group{
+        border: none;
+        background-color:rgb(253, 228, 242);
+    }
+    .instagram-wrapper{
+        width: 90%;
+    }
+    .instagram-phone{
+        display: none;
+    }
+    .instagram-continue{
+        width: 100%;
+    }
+ }
